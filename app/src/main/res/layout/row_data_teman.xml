@@ -4,7 +4,7 @@
     xmlns:card_View="http://schemas.android.com/apk/res-auto"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:id="@+id/kartuku"
     card_View:cardElevation="3dp"
     card_View:cardCornerRadius="5dp"
