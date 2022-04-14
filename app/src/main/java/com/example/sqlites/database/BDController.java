@@ -58,6 +58,21 @@ public class BDController extends SQLiteOpenHelper {
 
     }
 
+    public void UpdatData(HashMap<String, String> queryValue){
+        SQLiteDatabase db = getWritableDatabase();
+        ContentValues nilai = new ContentValues();
+        nilai.put("nama",queryValue.get("nama"));
+        nilai.put("telpon",queryValue.get("telpon"));
+        db.update("teman", nilai, "id=?", new String[]{queryValue.get("id")});
+        db.close();
+    }
+
+    public void DeleteData(HashMap<String, String> queryValue){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete("teman", "id=?", new String[]{queryValue.get("id")});
+        db.close();
+    }
+
 
 
 }

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SQLites">
-        <activity android:name=".TedmanBaku"></activity>
+        <activity
+            android:name=".edit_teman"
+            android:exported="false" />
+        <activity android:name=".TedmanBaku" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
